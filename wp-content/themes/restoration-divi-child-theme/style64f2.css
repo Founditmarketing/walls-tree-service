@@ -1,0 +1,294 @@
+/* 
+ Theme Name:     restoration-divi-child-theme
+ Author:         Mark Hendriksen
+ Author URI:     https://markhendriksen.com
+ Template:       Divi
+ Version:        1.0
+ Description:    A Divi Child Theme 
+*/ 
+
+
+/* ----------- PUT YOUR CUSTOM CSS BELOW THIS LINE -- DO NOT EDIT ABOVE THIS LINE --------------------------- */ 
+
+/* ###### CHANGE COLORS ###### */
+
+/* ##### Current and hover menu items ##### */
+.et_pb_column .custom_menu.et_pb_menu .nav li ul.sub-menu li.current-menu-item a,
+.custom_menu.et_pb_menu .nav li ul.sub-menu li a:hover {
+    color: #fff !important;
+	background-color: #175a30 !important;
+}
+
+/* ###### HORIZONTAL LINE NEXT TO TEXT LINK ###### */
+.horizontal_line_text a::before {
+    border-top: .3rem solid #e51b0f;
+}
+
+/* ###### HOME PAGE CHECK ICON ###### */
+.fa-check-square {
+	color: #e51b0f;
+}
+
+/* ###### CONTACT FORM OPTION FIELD BG AND TEXT COLORS ###### */
+.custom_contact_form option {
+	color: #fff;
+    background-color: #1e3c7e;
+}
+
+
+/* ###### CONTACT FORM DROPDOWN ARROW COLOR ###### */
+.custom_contact_form .et_pb_contact_field[data-type=select]:after {
+    border-top-color: #fff;
+}
+
+.testimonial_box {
+	outline: 1px solid #ffffff;
+    outline-offset: -20px;
+}
+
+/* ###### END CHANGE COLORS ###### */
+
+
+/* ###### GENERAL ###### */
+
+@media only screen and ( min-width: 981px ) and (max-width: 1450px) {
+.custom_row_width {
+	width: 95% !important;
+}
+
+.cta_box_sub .et_pb_blurb_description {
+	font-size: 30px !important;
+}}
+
+/* ###### TOP HEADER & MENU ###### */
+
+@media only screen and ( min-width: 981px ) {
+.header_column_1 {
+	width: 20% !important;
+}
+
+.header_column_2 {
+	width: 80% !important;
+}
+
+.menu_column_1 {
+	width: 100% !important;
+}
+
+.menu_column_2 {
+	width: 20% !important;
+}
+
+.custom_menu .et-menu>li {
+    padding-left: 20px;
+    padding-right: 20px;
+}}
+
+/* ########## DROPDOWN MENU ########### */
+
+.custom_menu .nav li li a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+	font-size: 14px !important;
+	padding: 10px 20px !important;
+}
+
+.custom_menu .nav li li  {
+	padding: 0px !important;
+}
+
+.custom_menu .nav ul.sub-menu {
+	padding: 0px !important;
+}
+
+.custom_menu .nav li li:last-child a {
+    border-bottom: 0px solid rgba(255, 255, 255, 0.35);
+}
+
+.custom_menu .et-menu li li a {
+    width: 240px !important;
+}
+
+.et_pb_column .custom_menu.et_pb_menu .nav li ul.sub-menu li.current-menu-item a,
+.custom_menu.et_pb_menu .nav li ul.sub-menu li a:hover {
+	opacity:1 !important;
+}
+
+.custom_menu.et_pb_menu--without-logo .et_pb_menu__menu>nav>ul>li>a {
+    padding-bottom: 22px;
+}
+
+
+/* ###### FIRST SECTION EXTRA PADDING FOR FIXED TOP HEADER & MENU ###### */
+@media only screen and ( min-width: 981px ) {
+.top_section {
+	padding-top: 100px !important;
+}} 
+
+
+/* ###### HORIZONTAL LINE NEXT TO TEXT LINK ###### */
+
+.horizontal_line_text a::before {
+	display: inline-block;
+    content: "";
+    margin: 0 1rem 0 0;
+	-webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+/* ###### HORIZONTAL LINE NEXT TO TEXT LINK (20PX FONTSIZE) ###### */
+
+.horizontal_line_20px a::before {
+   width: 2rem;
+   transform: translateY(-0.3rem);
+}
+
+/* ###### HORIZONTAL LINE NEXT TO TEXT LINK (16PX FONTSIZE) ###### */
+
+.horizontal_line_16px a::before {
+   width: 1.2rem;
+   transform: translateY(-0.2rem);
+}
+
+/* ###### RESPONSIVE STYLES  ###### */
+
+/* ###### RESPONSIVE STYLES CTA PHONE HOME  ###### */
+
+@media only screen and ( min-width: 981px ) {
+.home_cta_phone.et_pb_blurb_position_left .et_pb_blurb_container {
+    padding-left: 35px;
+}}
+
+@media only screen and ( max-width: 980px ) {
+.home_cta_phone.et_pb_blurb_position_left .et_pb_blurb_container h4.et_pb_module_header  {
+	padding-bottom: 0px !important;
+}}
+
+@media only screen and ( min-width: 981px ) and (max-width: 1500px) {
+.home_cta_phone {
+	font-size: 40px !important;	
+	width: 100% !important;
+}
+
+.home_cta_phone .et_pb_blurb_container	{
+	padding-left: 15px !important;	
+}
+
+.home_cta_phone .et_pb_main_blurb_image .et_pb_image_wrap {
+    width: 73px;
+}}
+
+/* ###### RESPONSIVE STYLES CTA PHONE SUB  ###### */
+
+@media only screen and ( min-width: 981px ) {
+.home_cta_phone_sub.et_pb_blurb_position_left .et_pb_blurb_container {
+    padding-left: 55px;
+}}
+
+@media only screen and ( max-width: 980px ) {
+.home_cta_phone_sub.et_pb_blurb_position_left .et_pb_blurb_container h4.et_pb_module_header  {
+	padding-bottom: 0px !important;
+}}
+
+@media only screen and ( min-width: 981px ) and (max-width: 1320px) {
+.home_cta_phone_sub {
+	font-size: 36px !important;	
+	width: 100% !important;
+}
+
+.home_cta_phone_sub .et_pb_blurb_container	{
+	padding-left: 15px !important;	
+}
+
+.home_cta_phone_sub .et_pb_main_blurb_image .et_pb_image_wrap {
+    width: 73px;
+}}
+
+.testimonial_blurb.et_pb_blurb_position_left .et_pb_blurb_content  {
+    width: fit-content;
+}
+
+.testimonial_blurb.et_pb_blurb_position_left .et_pb_blurb_content .et_pb_module_header {
+	margin-top: 13px;
+    padding-bottom: 3px;
+}
+
+@media only screen and ( min-width: 981px ) and (max-width: 1810px) {
+.menu_column_2 {
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+}}
+
+@media only screen and ( min-width: 981px ) and (max-width: 1500px) {
+.menu_appointment {
+	font-size: 14px !important;	
+	margin-bottom: -10px !important;
+}
+
+.menu_phone {
+	font-size: 20px !important;		
+}}
+
+@media only screen and ( min-width: 1501px ) and (max-width: 1810px) {
+.menu_appointment {
+	font-size: 14px !important;	
+	margin-bottom: -10px !important;
+}
+
+.menu_phone {
+	font-size: 26px !important;		
+}}
+
+@media only screen and ( min-width: 981px ) and (max-width: 1250px) {
+.home_work h2 {
+	font-size: 38px !important;			
+}}
+
+@media only screen and ( min-width: 1251px ) and (max-width: 1550px) {
+.home_work h2 {
+	font-size: 50px !important;			
+}}
+
+@media only screen and ( min-width: 1551px ) and (max-width: 1750px) {
+.home_work h2 {
+	font-size: 64px !important;			
+}}
+
+@media only screen and ( min-width: 981px ) and (max-width: 1590px) {
+.home_discount .et_pb_column_1_3 {
+	padding-right: 25px;
+    padding-left: 25px;
+}
+
+.et_pb_text.discount_price {
+	font-size: 36px !important;	
+	padding-bottom: 10px!important;
+    margin-bottom: 0px!important;
+}}
+
+/* ###### ABOUT PAGE TEAM  ###### */
+
+.team_row h3 {
+	margin-bottom: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+@media only screen and ( min-width: 981px ) and (max-width: 1350px) {
+.about_partners {
+	width: 100% !important;
+}}
+
+/* ###### SUB PAGE ICON BUTTON  ###### */
+
+body #page-container .et_pb_section .et_pb_button.button_header_sub:before {
+	font-size: 24px !important;
+}
+
+/* ###### POST PAGE ###### */
+
+.single .et_pb_post {
+    margin-bottom: 0px;
+}
+
+.single .post {
+    padding-bottom: 0px;
+}
